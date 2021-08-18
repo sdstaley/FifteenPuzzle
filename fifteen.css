@@ -1,0 +1,172 @@
+html, body {
+    height: 100%;
+}
+
+#puzzle {
+    margin: 5% auto;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#game {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.tile {
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    text-align: center;
+    border: 2px black solid;
+    vertical-align: middle;
+    font-size: 32px;
+    font-family: sans-serif;
+    line-height: 100px;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+}
+
+button, select {
+    display: block;
+    margin: 10px auto;
+}
+
+img {
+    height: 30px;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    border: 0;
+}
+
+.bg1 {
+    background: url("bg1.jpg");
+    height: 100px;
+    width: 100px;
+}
+
+.bg2 {
+    background: url("bg2.jpg");
+}
+
+.bg3 {
+    background: url("bg3.jpg");
+}
+
+.bg4 {
+    background: url("bg4.jpg");
+}
+
+#one {
+    background-position: 0 0;
+}
+
+#two {
+    background-position: -100px 0;
+}
+
+#three {
+    background-position: -200px 0;
+}
+
+#four {
+    background-position: -300px 0;
+}
+
+#five {
+    background-position: 0 -100px;
+}
+
+#six {
+    background-position: -100px -100px;
+}
+
+#seven {
+    background-position: -200px -100px;
+}
+
+#eight {
+    background-position: -300px -100px;
+}
+
+#nine {
+    background-position: 0 -200px;
+}
+
+#ten {
+    background-position: -100px -200px;
+}
+
+#eleven {
+    background-position: -200px -200px;
+}
+
+#twelve {
+    background-position: -300px -200px;
+}
+
+#thirteen {
+    background-position: 0 -300px;
+}
+
+#fourteen {
+    background-position: -100px -300px;
+}
+
+#fifteen {
+    background-position: -200px -300px;
+}
+
+#sixteen {
+    border: 2px solid white !important;
+}
+
+.clickable {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.hover:hover {
+    border-color: red !important;
+    text-decoration: underline !important;
+    color: #006600;
+    cursor: pointer;
+}
+
+#win {
+    font-size: 15px;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+#win img {
+    float: none !important;
+    height: 100% !important;
+}
+
+.animate {
+    -webkit-animation: spin 1s ease-in;
+
+}
+@-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}   
+}
